@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3, 
+    "name": "Timer Extenmsion", 
+    "version": "1.0.0", 
+    "description": "Uma extensão para o Chrome que servirá como Timer.",
+    "icons": {
+        "16": "timer.png",
+        "32": "timer.png",
+        "48": "timer.png",
+        "64": "timer.png",
+        "128": "timer.png"
+    },
+    "action": {
+        "default_action": {
+            "16": "timer.png",
+            "24": "timer.png",
+            "32": "timer.png"
+        },
+        "default_title": "Timer Extension",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
