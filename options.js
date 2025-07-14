@@ -6,11 +6,11 @@ saveBtn.addEventListener("click", () => {
     chrome.storage.sync.set({
         name,
     }, () => {
-        console.log(`Nome armazenado foi de ${name}`)
+        console.log(`O nome armazenado foi de ${name}`)
     })
 })
 
-chrome.storage.sync.get(["name", "test"], (res) => {
+chrome.storage.sync.get(["name"], (res) => {
     nameInput.value = res.name ?? "???"
     console.log(res)
 })
